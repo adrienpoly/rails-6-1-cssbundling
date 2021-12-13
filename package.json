@@ -18,8 +18,7 @@
     "webpack-dev-server": "^3"
   },
   "scripts": {
-    "build:css": "$npm_execpath run build:tailwind && $npm_execpath run build:sass",
-    "build:tailwind": "tailwindcss --postcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/tailwind.css",
+    "build:css": "tailwindcss --postcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/tailwind.css",
     "build:sass": "sass ./app/assets/stylesheets/application.sass.scss ./app/assets/builds/sass.css --no-source-map --load-path=node_modules"
   }
 }
